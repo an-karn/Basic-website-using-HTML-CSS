@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column2{
+   font: italic bold 30px Georgia, serif;
+}
+</style>
+</head>
+<body style = "background-color:grey">
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="photos/pic/all.html">Gallery</a>
+    <a href="send.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+  </div>
+<h2>Every picture has a story to express</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aasa;">
+    <img src="g.jpg" alt="sunrise" height="400px" width="400px">
+    <h2> Sunrise in Red fort India</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+      <img src="gg.jpg" alt="temple" height="400px" width="400px">
+    <div class="column2">
+      <h2 >Capturing nature with ethnicity</h2>
+
+      <p>Some text..</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
